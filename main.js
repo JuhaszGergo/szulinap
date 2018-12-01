@@ -23,4 +23,11 @@ if(maVan){
 	}
     return false;
 }, false);
+	document.body.addEventListener('touchstart', function(ev) {
+    ev.preventDefault();	
+    if(window.confirm('Boldog szülinapot Gergő!!')){
+		window.open('index.html#output','mywindow','width=400,height=200');		
+	}
+    return false;
+}, false);	 
 }
